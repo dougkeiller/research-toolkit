@@ -1,0 +1,10 @@
+{
+  "name": "research-toolkit",
+  "owner": { "name": "Doug Keiller" },
+  "metadata": { "description": "Exa-first research plugin for Claude Code", "version": "1.0.0" },
+  "plugins": [
+    { "name": "research-toolkit", "source": "./", "version": "1.4.0",
+      "description": "One research entry point with six modes on Exa, with human stops between the long-list, the scored cut and verification",
+      "keywords": ["research", "exa", "search"] }
+  ]
+}
