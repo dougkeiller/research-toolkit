@@ -1,6 +1,6 @@
 {
   "name": "research-toolkit",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "One research plugin, Exa-first: a single entry point that picks one of six modes (Lookup, Sweep, Verify, Enumerate, Deep, Watch), enforces the human stops between the long-list, the scored cut and verification, and writes a dated note. Carries the whole Exa surface plus a source map for everything else.",
   "author": {
     "name": "Doug Keiller"
@@ -15,5 +15,10 @@
     "citations",
     "long-list"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/dougkeiller/research-toolkit",
+  "repository": "https://github.com/dougkeiller/research-toolkit",
+  "supportUrl": "https://github.com/dougkeiller/research-toolkit/issues",
+  "documentationUrl": "https://github.com/dougkeiller/research-toolkit#readme",
+  "privacyPolicyUrl": "https://github.com/dougkeiller/research-toolkit/blob/main/PRIVACY.md"
 }

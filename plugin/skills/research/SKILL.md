@@ -23,8 +23,21 @@ reconstructing it:
 - `${CLAUDE_PLUGIN_ROOT}/references/mode-enumerate.md`, `mode-deep.md`, `mode-watch.md` — the full procedure for those three modes; read the one you are about to run
 - `${CLAUDE_PLUGIN_ROOT}/references/parallel.md` — how to query Parallel, the second search tier, when Exa comes back thin
 
-The script: `S="${CLAUDE_PLUGIN_ROOT}/scripts/exa_extras.py"`. It carries its
-own credential — never ask for an API key, never print it. If the script is not present (the directory version ships without scripts; the full version is on GitHub), run sweeps with the Exa MCP tools instead and skip monitors.
+The script, only when it exists (a clone of the GitHub repo, not the installed plugin; check with `test -f`): `S="${CLAUDE_PLUGIN_ROOT}/scripts/exa_extras.py"`. It carries its
+own credential — never ask for an API key, never print it.
+
+**No script here?** (the usual case) The installed plugin ships without script files (the
+full version with the script is at github.com/dougkeiller/research-toolkit).
+Everything except monitors still runs through the Exa connector's tools:
+
+- `sweep` → one `web_search_advanced_exa` call per category and per `--alt`
+  angle, with the same query, objective and date filter; merge the rows,
+  drop duplicate URLs, and write the long-list file yourself.
+- `deep` → `agent_run` with the question and the same objective; treat its
+  answer like Deep output (lists, not established facts) and verify as usual.
+- `monitor-*` → not available. Offer Watch as a manual re-run instead: save
+  the query and the date of this run in the note, and next time run the
+  sweep with that date as the start filter.
 
 ## Before anything
 

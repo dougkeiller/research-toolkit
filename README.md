@@ -51,3 +51,7 @@ Scheduled monitors have a recurring Exa cost; the skill states it before creatin
 ## Credit
 
 `references/query-patterns.md` adapts material from Exa's MIT-licensed search skill.
+
+## Running without the script
+
+Anthropic's plugin directory accepts script files only from verified publishers, so the plugin carries no scripts. Sweeps and Deep Search run through the Exa connector's tools instead. Exa monitors (Watch mode) need `scripts/exa_extras.py`, which is in this repository but not in the installed plugin: to use monitors, clone the repo and run the script directly with your own Exa API key in `EXA_API_KEY` (`python3 scripts/exa_extras.py --help`).
