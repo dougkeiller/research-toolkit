@@ -8,7 +8,7 @@ pages and — if asked — synthesises a grounded answer with a citation and a
 confidence per field. Use it when one retrieval pass cannot settle the
 question; stay with an ordinary search when the query already names a specific
 source or narrow topic, or when the job is to find pages for this skill to
-read. Run it without a price preamble.
+read. It is billed like a search; no extra approval is needed.
 
 **Mode.** `deep` by default — Exa's recommended type for research workflows.
 `deep-lite` when latency matters and the question is simple (about 4 s).

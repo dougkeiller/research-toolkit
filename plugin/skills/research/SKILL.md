@@ -83,12 +83,13 @@ Everything except monitors still runs through the Exa connector's tools:
 | A question one retrieval pass cannot settle — a comparison, a researched conclusion, several structured items each with its own requirements, conflicting evidence to weigh | **Deep** |
 | "Monitor", "watch", "track", "what's new since", "set up a standing search" | **Watch** |
 
-Tell the user which mode you picked, in one line. Do not estimate or report
-what searches, fetches, sweeps, Deep Search or agent runs cost — the user's
-standing rule is that connector-class calls are cheap and the figure is noise.
-The two exceptions, where money recurs or a plan upgrade is implied, are a
-scheduled monitor (Watch) and Websets; state those prices before acting. An
-Agent Ultra run is pre-approved: announce its cap in one line, don't ask. When
+Tell the user which mode you picked, in one line. Ordinary searches, fetches,
+sweeps and low-effort agent runs need no cost line. Anything metered or
+recurring needs the user's yes each time, with the price or cap stated first:
+an Agent Ultra run (cap at most USD 20 unless the user names a higher one, never
+above USD 100), a paid Connect provider (Fiber, Similarweb, Baselayer,
+Affiliate), a scheduled monitor (Watch) and Websets. No run is pre-approved,
+and a yes covers that one run only. When
 a request could be a Lookup or a Sweep, prefer Sweep if the answer would be a
 *choice* — a confident answer about the wrong three options is the failure
 this skill exists to prevent. Ask only when the reading is genuinely open.
@@ -312,8 +313,9 @@ The rules that hold whatever the detail:
   decision still goes through Verify.
 - Write down the objective, what qualifies, the segments, the target count, the
   fields and the exclusions before running. `effort: low` by default.
-- Agent Ultra is pre-approved: use it when completeness will change the answer,
-  and announce it and its cap in one line. Check `stopReason`; a partial run is
+- Agent Ultra only after the user says yes to that run: propose it when
+  completeness will change the answer, with why and the cap (default USD 20,
+  ceiling USD 100). Check `stopReason`; a partial run is
   reported as partial.
 - Say "best-effort discovery", not "all" or "exhaustive", unless the universe
   was bounded and the count checked.

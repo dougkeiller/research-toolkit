@@ -38,11 +38,11 @@ claude plugin install research-toolkit@research-toolkit
 
 You need your own Exa account.
 
-1. Install Exa's MCP connector (for example Exa's own Claude Code plugin). This toolkit's `.mcp.json` declares Exa as a dependency but ships with no URL or key.
-2. The installed plugin needs no API key: it uses the Exa connector. (Only the optional script in a clone of the GitHub repo needs a key; see that repo's root README.)
+1. The plugin declares Exa's hosted MCP server (`https://mcp.exa.ai/mcp`) and needs no API key.
+2. Exa bills its own usage to your Exa account. (Only the optional script in a clone of the GitHub repo needs a key; see that repo's root README.)
 3. Monitors (Watch mode) also need a webhook URL in `EXA_MONITOR_WEBHOOK`.
 
-Scheduled monitors have a recurring Exa cost; the skill states it before creating one. In cloud sessions the scripts need network egress to `api.exa.ai`.
+**Spending.** Ordinary searches are billed by Exa as you use them. Anything metered or recurring (Agent Ultra runs, paid data providers such as Fiber or Similarweb, scheduled monitors, Websets) runs only after you say yes to that run, with its price or cap stated first. Agent Ultra is capped at USD 20 per run by default and never above USD 100. Nothing is pre-approved. In cloud sessions the scripts need network egress to `api.exa.ai`.
 
 ## Version
 

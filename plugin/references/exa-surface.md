@@ -8,9 +8,9 @@ Jobs do.
 Prices below were read from https://exa.ai/pricing on 2026-09-02 and re-checked
 unchanged on 2026-10-06, and re-checked against exa.ai/docs/admin/pricing on
 2026-10-28 (raw page text): `lite` is $4/1k, `auto` $7/1k, `instant`/`fast` are
-legacy at their old prices. They are reference, not reporting: the user's standing
-rule is that connector-class calls are not costed in conversation. State a
-price only for a scheduled monitor or a Websets upgrade.
+legacy at their old prices. They are reference. State a price and get a yes before any
+metered or recurring spend: Agent Ultra, a paid Connect provider, a scheduled
+monitor or a Websets upgrade.
 
 | Job | Reach for | Price |
 | --- | --- | --- |
@@ -167,11 +167,8 @@ effort="ultra")` (SDKs) or `reasoning.effort: "ultra"` on the Responses API
   (authoritative over streamed source previews), `costDollars` and
   `usage.agentComputeUnits`.
 
-**Standing approval (user, 2026-10-28):** Ultra is pre-approved whenever
-judgement says the extra completeness is worth it. Do not ask first. Say in one
-line that Ultra is running, why, and the cap chosen. Pick the cap by judgement:
-$20 (default) for a typical exhaustive list; up to $100 when the universe is
-large or multi-segment and a thin result would mislead. Bound arrays with
+**Approval:** Ultra needs the user's yes before each run. Say why and
+the cap: $20 by default; higher only when the user names it, never above $100. Bound arrays with
 `maxItems` so contact-enrichment cost stays predictable.
 
 **Verification schemas** (quickstart, 2026-10-28): make fields that may not be

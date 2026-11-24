@@ -27,7 +27,7 @@ session is not a source.
 | Podcast transcripts — what a person actually said | `agent_run` with `dataSources: [{provider: "particle"}]` | Speaker-attributed, timestamped; not on the open web |
 | A US public company's prices, fundamentals, earnings, filings, ownership, or a stock screen | `agent_run` with `financial_datasets` | 27,000+ US tickers; ties a claim to reported numbers rather than coverage of them |
 | Web traffic, competitors of a domain, B2B company/people data, US business verification, product prices | `agent_run` with `similarweb`, `fiber`, `baselayer` or `affiliate` | Partner databases; see `exa-surface.md` for what each holds, its billing and its caveats (Similarweb figures are modelled; Affiliate links are affiliate links; Fiber contact reveal is personal data) |
-| An exhaustive list where a missed entrant is the costly error | `agent_run` with `effort: "ultra"` | Pre-approved; highest-effort Agent, up to 3 h; see the research skill |
+| An exhaustive list where a missed entrant is the costly error | `agent_run` with `effort: "ultra"` | Needs the user's yes each run (cap USD 20 default, 100 max); highest-effort Agent, up to 3 h; see the research skill |
 | The crowd's implied odds on a dated, resolvable event | `agent_run` with `polymarket` | A market price; report it as one — see the research skill's rule |
 | Anything recurring — a watchlist, a weekly digest | Exa Monitors via the script, or a Cowork scheduled task | Runs without a session open |
 

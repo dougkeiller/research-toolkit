@@ -11,9 +11,8 @@ do not quote them to the user — with one exception, below.
 
 **Agent Ultra** (`effort: "ultra"`) is the highest tier: metered rather than
 fixed, typically about 30 minutes and up to 3 hours, default cap USD 20 (range
-1–100). **The user has pre-approved it (2026-10-28): use it whenever judgement
-says the extra completeness will change the answer — do not ask first.** Reach
-for it when:
+1–100). **Never run it without the user's yes for that run:** say that you
+propose Ultra, why, and the cap, and wait. Propose it when:
 
 - the request is "every", "all", "the whole market" and the user will choose
   from the list, so a missed entrant is the costly error;
@@ -22,9 +21,8 @@ for it when:
 - deep multi-source research where coverage is the point, not speed.
 
 Not for a fact, a single entity, Verify (which reads pages directly), or
-anything the user wants in minutes. Announce it in one line — that Ultra is
-running, why, and the cap. Cap by judgement: the USD 20 default for a typical
-exhaustive list, up to USD 100 for a large or multi-segment universe; add
+anything the user wants in minutes. The cap you propose: the USD 20 default for
+a typical exhaustive list; more only if the user names it, never above USD 100; add
 `budget.maxDurationSeconds` (300–10800, Ultra only) when the user needs it
 back sooner. Bound arrays with `maxItems`. It returns what it has near a
 limit, so check `stopReason`: `schema_satisfied` is a finished run;
@@ -77,8 +75,8 @@ here (full detail and prices in `exa-surface.md`):
 - `baselayer` (US business verification and officers), `jinko` (flights and
   hotels), `macrobond` (macro series; see the source map).
 
-Billing on Fiber, Similarweb, Baselayer and Affiliate is on top of the run;
-attach a provider only when the question needs it, and name its data in the
+Billing on Fiber, Similarweb, Baselayer and Affiliate is on top of the run:
+ask the user before attaching one, every time, and attach it only when the question needs it, and name its data in the
 query and the schema or the agent will not call it.
 
 **Coverage language.** Say "best-effort discovery" unless the universe was
