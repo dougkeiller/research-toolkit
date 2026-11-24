@@ -24,7 +24,7 @@ reconstructing it:
 - `${CLAUDE_PLUGIN_ROOT}/references/parallel.md` — how to query Parallel, the second search tier, when Exa comes back thin
 
 The script: `S="${CLAUDE_PLUGIN_ROOT}/scripts/exa_extras.py"`. It carries its
-own credential — never ask for an API key, never print it.
+own credential — never ask for an API key, never print it. If the script is not present (the directory version ships without scripts; the full version is on GitHub), run sweeps with the Exa MCP tools instead and skip monitors.
 
 ## Before anything
 
