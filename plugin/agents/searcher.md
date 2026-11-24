@@ -4,9 +4,6 @@ description: "Runs a batch of Exa searches for the research skill and returns co
 model: haiku
 color: cyan
 tools:
-- "mcp__Exa__web_search_advanced_exa"
-- "mcp__Exa__web_fetch_exa"
-- "mcp__Exa__web_search_exa"
 - "mcp__plugin_research-toolkit_Exa__web_search_advanced_exa"
 - "mcp__plugin_research-toolkit_Exa__web_fetch_exa"
 - "mcp__plugin_research-toolkit_Exa__web_search_exa"

@@ -67,7 +67,7 @@ outside `publication` (it "limits results to papers"), so run those on the
 general index. Bound recency with the published-date pair when the window is
 a hard requirement; otherwise say the period in the query. For clinical or
 life-science questions, Elicit and PubMed are the primary sources and this
-pass is the supplement — see `source-map.md`.
+round is the supplement — see `source-map.md`.
 
 ## News — category `news`
 
@@ -100,7 +100,7 @@ with [subject] for years", which people rarely fabricate); insider terminology
 
 Before reading anything deeply, filter noise: no skin in the game (theorists
 with nothing shipped), misaligned incentives (vendor blogs, affiliate pages,
-sponsored content), circular credentials (validated only by peers in the same
+sponsored content), circular endorsements (validated only by peers in the same
 bubble), positive-only advice (no trade-offs discussed), temporal decay (moved
 from doing to advising — are they still practising?).
 

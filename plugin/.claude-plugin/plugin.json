@@ -1,6 +1,6 @@
 {
   "name": "research-toolkit",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "One research plugin, Exa-first: a single entry point that picks one of six modes (Lookup, Sweep, Verify, Enumerate, Deep, Watch), enforces the human stops between the long-list, the scored cut and verification, and writes a dated note. Carries the whole Exa surface plus a source map for everything else.",
   "author": {
     "name": "Doug Keiller"
