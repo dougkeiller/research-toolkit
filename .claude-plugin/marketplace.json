@@ -11,7 +11,7 @@
     {
       "name": "research-toolkit",
       "source": "./plugin",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "description": "One research entry point with six modes on Exa, with human stops between the long-list, the scored cut and verification",
       "keywords": [
         "research",

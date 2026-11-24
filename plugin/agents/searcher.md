@@ -7,9 +7,9 @@ tools:
 - "mcp__Exa__web_search_advanced_exa"
 - "mcp__Exa__web_fetch_exa"
 - "mcp__Exa__web_search_exa"
-- "mcp__ae62a597-c1b5-4fd7-a90b-ef15232199e7__web_search_advanced_exa"
-- "mcp__ae62a597-c1b5-4fd7-a90b-ef15232199e7__web_fetch_exa"
-- "mcp__ae62a597-c1b5-4fd7-a90b-ef15232199e7__web_search_exa"
+- "mcp__plugin_research-toolkit_Exa__web_search_advanced_exa"
+- "mcp__plugin_research-toolkit_Exa__web_fetch_exa"
+- "mcp__plugin_research-toolkit_Exa__web_search_exa"
 - "WebSearch"
 ---
 

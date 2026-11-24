@@ -39,7 +39,7 @@ claude plugin install research-toolkit@research-toolkit
 You need your own Exa account.
 
 1. Install Exa's MCP connector (for example Exa's own Claude Code plugin). This toolkit's `.mcp.json` declares Exa as a dependency but ships with no URL or key.
-2. For the script modes (`sweep`, `deep`, monitors), give it a key: set `EXA_API_KEY`, or put the key in `~/.exa_key`. Never commit a key into the plugin folder.
+2. The installed plugin needs no API key: it uses the Exa connector. (Only the optional script in a clone of the GitHub repo needs a key; see that repo's root README.)
 3. Monitors (Watch mode) also need a webhook URL in `EXA_MONITOR_WEBHOOK`.
 
 Scheduled monitors have a recurring Exa cost; the skill states it before creating one. In cloud sessions the scripts need network egress to `api.exa.ai`.

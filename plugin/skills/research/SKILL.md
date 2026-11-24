@@ -47,10 +47,9 @@ Everything except monitors still runs through the Exa connector's tools:
 2. **Tools.** The method needs `web_search_advanced_exa` and `web_fetch_exa`.
    The Exa tools are usually *deferred*: they appear by name only and must be
    loaded before the first call, in one go. Their prefix depends on the host:
-   `mcp__Exa__` in Cowork (this plugin's own server), but in the Claude Code
-   desktop app the plugin's server has an empty URL and the working tools come
-   from the claude.ai Exa connector under a UUID prefix (seen 2026-10-28:
-   `mcp__ae62a597-c1b5-4fd7-a90b-ef15232199e7__`). Find them by name rather
+   this plugin's own server is `mcp__plugin_research-toolkit_Exa__` in Claude
+   Code and may show as `mcp__Exa__` elsewhere, and a claude.ai Exa connector
+   shows under its own prefix (`mcp__<connector-id>__`). Find them by name rather
    than assuming a prefix — `ToolSearch` with `web_search_advanced_exa` —
    then `select:` all three (`web_search_advanced_exa`, `web_fetch_exa`,
    `agent_run`) under the prefix that came back. Say so if they are absent. Note which domain
