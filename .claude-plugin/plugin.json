@@ -14,5 +14,6 @@
     "agent",
     "citations",
     "long-list"
-  ]
+  ],
+  "license": "MIT"
 }
